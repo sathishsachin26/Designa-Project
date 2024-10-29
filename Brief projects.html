@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Designa</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="x-icon" href="e:\DESIGNA BRAND\Designa Logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .navbar-brand {
+      font-family: 'lexend deca' !important;
+      font-size: large;
+      color: greenyellow !important;
+
+    }
+
+    .nav li a:hover {
+      font-family: 'lexend deca';
+      color: greenyellow !important;
+    }
+
+    .nav a {
+      font-family: 'lexend deca' !important;
+    }
+
+    h3 {
+      font-family: 'lexend deca';
+      padding-left: 60px;
+      color: darkolivegreen;
+    }
+
+    .flip-card {
+      padding-left: 80px;
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+    }
+
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: justify;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+
+    .flip-card-front {
+      color: black;
+    }
+
+
+    .flip-card-back {
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .nfth1 {
+      font-family: 'lexend deca';
+      font-size: larger;
+      color: darkgoldenrod;
+    }
+
+    .nftp {
+
+      font-family: 'lexend deca';
+      font-size: medium;
+      
+    }
+
+    .perfumeh1 {
+      font-family: 'lexend deca';
+      padding-left: 60px;
+      font-size: larger;
+      color: darkblue;
+    }
+
+    .perfumep {
+      font-family: 'lexend deca';
+      padding-left: 60px;
+      font-size: medium;
+      
+    }
+
+    .travelh1 {
+      font-family: 'lexend deca';
+      font-size: larger;
+      color: blue;
+    }
+
+    .travelp {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .grabcarth1 {
+      font-family: 'lexend deca';
+      padding-left: 60px;
+      font-size: larger;
+      color: darkorange;
+    }
+
+    .grabcartp {
+      font-family: 'lexend deca';
+      padding-left: 60px;
+      font-size: medium;
+    }
+
+   
+    .form-control {
+      font-family: 'lexend deca';
+    }
+
+
+    .text-uppercase {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .me-5 {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .footer {
+      background-color: black;
+    }
+
+    .pfooter {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .text-reset {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .fadr {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .feml {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .fpno {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .text-center {
+      font-family: 'lexend deca';
+      font-size: medium;
+    }
+
+    .btn {
+      font-family: 'lexend deca';
+      font-size: medium;
+      
+      } 
+
+   
+   
+
+
+  </style>
+
+
+
+
+
+
+
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="e:\DESIGNA BRAND\Designa Logo.png">Designa</a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="alignment-example">
+
+
+        <ul class="nav navbar-nav">
+          <li><a href="Home.html">Home</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Discover <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="Explore Designa.html">Explore Designa</a></li>
+              <li><a href="About Designa.html">About Designa</a></li>
+              <li><a href="Upcoming projects.html">Upcoming Projects</a></li>
+              <li><a href="Brief projects.html">Brief Projects</a></li>
+            </ul>
+          </li>
+
+          <li><a href="Webpage designs.html">Webpages</a></li>
+          <li><a href="Logo designs.html">Logo</a></li>
+          <li><a href="Poster designs.html">Poster</a></li>
+
+
+
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">User <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="Register.html">Register</a></li>
+              <li><a href="Login.html">Login</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        </ul>
+
+
+
+
+
+
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" placeholder="Search here" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Search</button>
+        </form>
+
+
+
+      </div>
+
+    </div>
+  </nav><br><br>
+
+
+  <h3>Brief Projects</h3><br><br>
+
+  <!-- First card and Exp -->
+
+  <div class="row align-item-center">
+    <div class="col-md-4 col-xl-12">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="NFT App info.jpg" alt="Avatar" style="width:300px;height:400px;">
+          </div>
+          <div class="flip-card-back">
+            <img src="Deposit screen.jpg" alt="Avatar" style="width: 300px;height: 400px;">
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-xl-12">
+      <div class="flip-card-inner">
+
+        <h1 class="nfth1">NFT App</h1><br>
+        <p class="nftp">We designed the Nft app design for midtire nft app company, using black and yellow themed
+          structure using uiux ideas. This app available on both IOS and android devices this app available on both
+          light and dark theme based app designed for structure using wireframe for all these structures of the app.NFTs
+          are also generally one of a kind, or at least one of a very limited run, and have unique identifying codes.
+          “Essentially, NFTs create digital scarcity,” says Arry Yu, chair of the Washington Technology Industry
+          Association Cascadia Blockchain Council and managing director of Yellow Umbrella Ventures.
+          This stands in stark contrast to most digital creations, which are almost always infinite in supply.
+          Hypothetically, cutting off the supply should raise the value of a given asset, assuming it's in demand.
+          But many NFTs, at least in these early days, have been digital creations that already exist in some form
+          elsewhere, like iconic video clips from NBA games or securitized versions of digital art that's already
+          floating around on Instagram.
+          For instance, famous digital artist Mike Winklemann, better known as “Beeple” crafted a composite of 5,000
+          daily drawings to create perhaps the most famous NFT of the moment, “EVERYDAYS: The First 5000 Days,”</p><br>
+
+          
+
+
+
+      </div><br><br><br><br>
+
+    </div>
+
+    <!-- Second card and para Exp -->
+
+    <div class="col-md-6 col-xl-12">
+      <div class="flip-card-inner">
+
+        <h1 class="perfumeh1"> Perfume App</h1><br>
+        <p class="perfumep">A perfume is a very complex composition of top notes, heart notes and base notes. The top notes are the most delicate and do typically not last very long. Heart notes tend to be herbal, floral and spice notes which last longer than the top notes but you will be able to smell the base notes the longest.
+          The word perfume actually comes from the Latin world per fumum which literally translates as through smoke and the Romans and Arabs refined the art of making and wearing perfume 2500 years ago.
+          Emperor Nero would hold lavish feasts with rose and jasmine oil pouring through the fountains and being wafted into the air. The Arabian practice of Bakhoor which burns incense and precious wood in order to perfume clothing and the environment is still prominent today.
+          There are certain factors you should remember when storing perfume. Humidity, sunlight and variations of temperature will impact your perfume over time.
+        </p>
+
+        
+      
+
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xl-12">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Perfume app 1st page.jpg" alt="Avatar" style="width:300px;height:400px;">
+          </div>
+          <div class="flip-card-back">
+            <img src="Perfume app 2nd Page.jpg" alt="Avatar" style="width:300px;height:400px;">
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br><br><br>
+
+
+  <!-- third card and para exp -->
+
+
+  <div class="row align-item-center">
+    <div class="col-md-4 col-xl-12">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Travel app First page.png" alt="Avatar" style="width:300px;height:400px;">
+          </div>
+          <div class="flip-card-back">
+            <img src="Travel app Second Page.png" alt="Avatar" style="width:300px;height: 400px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 col-xl-12">
+      <div class="flip-card-inner">
+
+        <h1 class="travelh1">Travel App</h1><br>
+        <p class="travelp">Digital transformation in the tourism industry didn't happen overnight. Travel agencies have
+          implemented several strategies to make their business flourish, and being present digitally and facilitating
+          an end-to-end digital experience is one of them.
+          Minimizing traditional hospitality operations, mobile apps have emerged as a significant player in
+          transforming the tourism industry. It allows travel and hospitality operators to streamline their target
+          users experiences - they provide travelers with accessibility to various options available throughout
+          accommodations, flights, transportation, etc., of a specific destination via a single application and offer
+          them the flexibility to book the best deal without having to leave the app or their homes, for that matter.</p>
+
+          
+       
+
+      </div><br><br><br><br><br><br><br><br>
+
+    </div>
+
+    <!-- Fourth card and para exp -->
+
+    <div class="col-md-6 col-xl-12">
+      <div class="flip-card-inner">
+
+        <h1 class="grabcarth1">Grabcart Shopping App</h1><br>
+        <p class="grabcartp">
+          There are several reasons why customers prefer to shop within apps. For one, mobile apps often provide a more convenient and user-friendly experience than websites. Shopping apps are also typically faster and more responsive than mobile websites, which can be important for customers looking to make quick purchases. Additionally, many shopping apps offer exclusive deals and discounts not available on the retailer's website.
+          A mobile shopping app is an application that allows customers to browse and buy products or services from a retailer or service provider. Shopping apps can significantly impact businesses as mobile traffic continues to grow at an alarming rate. In fact, the majority of transactions now take place within shopping apps rather than on traditional websites.
+          Mobile shopping apps have come a long way. They offer many more features than a traditional website can offer.
+        </p>
+
+        
+     
+
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xl-12">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="First intro of my app.png" alt="Avatar" style="width:300px;height:500px;">
+          </div>
+          <div class="flip-card-back">
+            <img src="Grabcart Second Page.png" alt="Avatar" style="width:400px;height:500px;">
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br>
+
+  
+
+  
+
+  <div class="footer"><br>
+
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div><br>
+
+        <div>
+          <div class="col-md-12">
+
+            <a href="https://www.instagram.com/sachinuiux_?igsh=MXNzbnV0MjNyaHMxbg==" style="margin-right: 4vw;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sathishsachin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+
+
+          </div><br><br>
+
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+
+          <div class="row mt-3">
+
+            <div class="col-md-4 col-lg-4 col-xl-3  mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="designaf"></i>Designa<br><br>
+              </h6>
+              <p class="pfooter">
+                Logo<br><br>
+                Visiting Cards<br><br>
+                Webpage Designs<br><br>
+                Invitations<br><br>
+                Posters<br><br>
+              </p>
+            </div>
+
+
+
+            <div class="col-md-4 col-lg-4 col-xl-2  mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                Our Delivarables
+              </h6><br>
+              <p>
+                <a href="Coursefreak project First Intro page.jpg" class="text-reset">Webpage UI design</a><br><br>
+              </p>
+              <p>
+                <a href="Visiting card.jpg" class="text-reset">Visiting Cards</a><br><br>
+              </p>
+              <p>
+                <a href="Coca cola website Model 3 slide.png" class="text-reset">Coke Webpage design</a><br><br>
+              </p>
+              <p>
+                <a href="Payments.html" class="text-reset">Payments</a><br><br>
+              </p>
+            </div>
+
+
+
+            <div class="col-md-4 col-lg-4 col-xl-3 mb-md-0 mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6><br>
+              <p class="fadr"><i class="fas fa-home me-3"></i> P4Q3+7WR, AVP Azhagammal Nagar, Thanjavur, Tamil Nadu
+                613005</p><br>
+              <p class="feml">
+                <i class="fas fa-envelope me-3"></i>
+                designaworksforyou@gmail.com
+              </p><br>
+              <p class="fpno"><i class="fas fa-phone me-3"></i> + 91 9442712901</p>
+              <i class="fa fa-location"></i> <a href="https://g.co/kgs/MgKE1Xq" class="btn btn-link">Click here for
+                location</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="Bootstrap website exe.html">Designa</a>
+      </div><br><br>
+  </div>
+
+  </footer>
+
+
+  </div>
+</body>
+
+</html>

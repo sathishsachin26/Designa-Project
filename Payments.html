@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Designa</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="e:\DESIGNA BRAND\Designa Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+ 
+  <style>
+
+.navbar-brand {
+    font-family: 'lexend deca';
+    font-size:large;
+    color: greenyellow !important;
+    
+}
+
+.nav  li a:hover{
+    color: greenyellow !important;
+  }
+
+  nav {
+    font-family: 'lexend deca';
+  }
+
+#wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+.wrapper {
+  padding: 0 20px;
+}
+.wrapper-content {
+  padding: 20px 10px 40px;
+}
+#page-wrapper {
+  padding: 0 15px;
+  min-height: 568px;
+  position: relative !important;
+}
+@media (min-width: 768px) {
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 240px;
+    min-height: 2002px;
+  }
+}
+
+
+.payment-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #e7eaec;
+}
+.payment-icon-big {
+  font-size: 60px;
+  color: #d1dade;
+}
+.payments-method.panel-group .panel + .panel {
+  margin-top: -1px;
+}
+.payments-method .panel-heading {
+  padding: 15px;
+}
+.payments-method .panel {
+  border-radius: 0;
+}
+.payments-method .panel-heading h5 {
+  margin-bottom: 5px;
+}
+.payments-method .panel-heading i {
+  font-size: 26px;
+}
+
+.payment-icon-big {
+    font-size: 60px !important;
+    color: #d1dade;
+}
+
+.form-control,
+.single-line {
+  background-color: #FFFFFF;
+  background-image: none;
+  border: 1px solid #e5e6e7;
+  border-radius: 1px;
+  color: inherit;
+  display: block;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  font-size: 14px;
+}
+.text-navy {
+    color: #1ab394;
+}
+.text-success {
+    color: #1c84c6;
+}
+.text-warning {
+    color: #f8ac59;
+}
+.ibox {
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+.ibox.collapsed .ibox-content {
+  display: none;
+}
+.ibox.collapsed .fa.fa-chevron-up:before {
+  content: "\f078";
+}
+.ibox.collapsed .fa.fa-chevron-down:before {
+  content: "\f077";
+}
+.ibox:after,
+.ibox:before {
+  display: table;
+}
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 3px 0 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 14px 15px 7px;
+  min-height: 48px;
+}
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+}
+.ibox-footer {
+  color: inherit;
+  border-top: 1px solid #e7eaec;
+  font-size: 90%;
+  background: #ffffff;
+  padding: 10px 15px;
+}
+.text-danger {
+    color: #ed5565;
+}
+
+
+.ph3 {
+    font-family: 'lexend deca';
+    padding-left: 40px;
+}
+
+.footer {
+      background-color: black;
+    }
+
+    .text-uppercase  {
+      font-family: 'lexend deca';
+    }
+
+    .me-5 {
+      font-family: 'lexend deca';
+    }
+
+    .text-uppercase  {
+      font-family: 'lexend deca';
+    }
+
+    .pfooter {
+      font-family: 'lexend deca';
+    }
+
+    .text-reset {
+      font-family: 'lexend deca';
+    }
+
+    .fadr {
+      font-family: 'lexend deca';
+    }
+
+    .feml {
+      font-family: 'lexend deca';
+    }
+
+    .fpno {
+      font-family: 'lexend deca';
+    }
+
+    .text-center {
+      font-family: 'lexend deca';
+    }
+
+    .ibox {
+      font-family: 'lexend deca';
+    }
+
+    .container {
+      font-family: 'lexend deca';
+    }
+
+    .btn {
+      font-family: 'lexend deca';
+      color: black;
+    }
+
+
+  </style>
+</head>
+
+       <!-- navbar contents -->
+
+<body>
+
+    
+  
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+         
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="e:\DESIGNA BRAND\Designa Logo.png">Designa</a>
+          </div>
+          
+         
+          <div class="collapse navbar-collapse" id="alignment-example">
+          
+       
+          <ul class="nav navbar-nav">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Explore Designa.html">Explore Designa</a></li>
+          <li><a href="Buy.html">Buy</a></li>
+          <li><a href="About Designa.html">About Designa</a></li>
+          <li><a href="Upcoming projects.html">Upcoming Projects</a></li>
+          <li><a href="Brief projects.html">Brief Projects</a></li>
+          
+      
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Login.html">Login</a></li>
+            
+           
+            </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages  <i class="fa fa-globe"></i>
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="about-us">
+                <li>English</a></li>
+                <li>Canada</a></li>
+                <li>Europe</a></li>
+                <li>Espanol</a></li>
+                <li>Spanish</a></li>
+                <li>Germany</a></li>
+                
+                </ul>
+                </li>
+              </ul>
+            </ul>
+          
+      
+            
+          
+         
+          <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+          <input type="text"  placeholder="Search here" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Search</button>
+          </form>
+      
+          
+          
+          </div>
+          
+          </div>
+          </nav><br>
+
+
+          <!-- inner contents -->
+
+          <h3 class="ph3">Payments</h3><br><br>
+
+    <div class="container">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="payment-card">
+                        <img src="visa_logo-removebg-preview.png" width="100px" height="100px">
+                        <h2>
+                            **** **** **** 1060
+                        </h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <small>
+                                    <strong>Expiry date:</strong> 10/16
+                                </small>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <small>
+                                    <strong>Name:</strong> *****
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="payment-card">
+                        <img src="Master_card_logo-removebg-preview.png" width="100px" height="100px">
+                        <h2>
+                            **** **** **** 7002
+                        </h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <small>
+                                    <strong>Expiry date:</strong> 10/16
+                                </small>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <small>
+                                    <strong>Name:</strong> *****
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="payment-card">
+                        <img src="Paypal_logo-removebg-preview.png" width="100px" height="100px">
+                       
+                        <h2>
+                            **** **** **** 3466
+                        </h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <small>
+                                    <strong>Expiry date:</strong> 10/16
+                                </small>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <small>
+                                    <strong>Name:</strong> *****
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="row">
+        
+                <div class="col-lg-12">
+        
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            Payment method
+                        </div>
+                        <div class="ibox-content">
+        
+                            <div class="panel-group payments-method" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="pull-right">
+                                            <img src="Paypal_logo-removebg-preview.png" width="60px" height="50px">
+                                        </div>
+                                        <h5 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="Paypal_logo-removebg-preview.png">PayPal</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse">
+                                        <div class="panel-body">
+        
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <h2>Summary</h2>
+                                                    <strong>Product:</strong> Name of product <br>
+                                                    <strong>Price:</strong> <span class="text-navy">RS:4000</span>
+        
+                                                   
+                                                    <a class="btn btn-success">
+                                                        <i class="fa fa-cc-paypal">
+                                                            Purchase via PayPal
+                                                        </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                             </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="pull-right">
+                                            <img src="Credit_card_logo-removebg-preview.png" width="60px" height="50px ">
+                                           
+                                        </div>
+                                        <h5 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Credit Card</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+        
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h2>Summary</h2>
+                                                    <strong>Product:</strong>: Name of product <br>
+                                                    <strong>Price:</strong>: <span class="text-navy">RS:4000</span><br><br>
+        
+                                                    <p class="m-t">
+                                                       Make your payment through all paltforms credit, debit, paypal etc....
+        
+                                                    </p><br>
+                                                    <p>
+                                                       Not an limited transaction after transaction completed send picture through 
+                                                       mail for payment received confirmation
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+        
+                                                    <form role="form" id="payment-form">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label>CARD NUMBER</label>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" name="Number" placeholder="Valid Card Number" required="">
+                                                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-7 col-md-7">
+                                                                <div class="form-group">
+                                                                    <label>EXPIRATION DATE</label>
+                                                                    <input type="text" class="form-control" name="Expiry" placeholder="MM / YY" required="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-5 col-md-5 pull-right">
+                                                                <div class="form-group">
+                                                                    <label>CV CODE</label>
+                                                                    <input type="text" class="form-control" name="CVC" placeholder="CVC" required="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label>NAME OF CARD</label>
+                                                                    <input type="text" class="form-control" name="nameCard" placeholder="NAME AND SURNAME">
+                                                                </div>
+                                                            </div>
+                                                        </div><br>
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <button class="btn btn-success" type="submit">Make a payment</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div><br><br><br><br>
+
+        <!-- footer -->
+
+
+        <div class="footer"><br>  
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+      
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div><br>
+  
+      <div>
+       
+        <div class="col-md-12" >
+     
+            <a href="https://www.instagram.com/sachinuiux_?igsh=MXNzbnV0MjNyaHMxbg==" style="margin-right: 4vw;" >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sathishsachin" >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          
+          
+      
+      </div><br><br>
+      
+    </section>
+  
+  
+    
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+       
+        <div class="row mt-3">
+          
+          <div class="col-md-4 col-lg-4 col-xl-3  mb-4">
+            
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="designaf"></i>  Designa<br><br>
+            </h6>
+            <p class="pfooter">
+              Logo<br><br>
+              Visiting Cards<br><br>
+              Webpage Designs<br><br>
+              Invitations<br><br>
+              Posters<br><br>
+            </p>
+          </div>
+         
+  
+          
+          <div class="col-md-4 col-lg-4 col-xl-2  mb-4">
+            
+            <h6 class="text-uppercase fw-bold mb-4">
+                 Our Delivarables
+            </h6><br>
+            <p>
+              <a href="Coursefreak project First Intro page.jpg" class="text-reset">Webpage UI design</a><br><br>
+            </p>
+            <p>
+              <a href="Visiting card.jpg" class="text-reset">Visiting Cards</a><br><br>
+            </p>
+            <p>
+              <a href="Coca cola website Model 3 slide.png" class="text-reset">Coke Webpage design</a><br><br>
+            </p>
+            <p>
+              <a href="Unique style garments logo.png" class="text-reset">Brand logo</a><br><br>
+            </p>
+          </div>
+        
+   
+          <div class="col-md-4 col-lg-4 col-xl-3 mb-md-0 mb-4">
+            
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6><br>
+            <p class="fadr"><i class="fas fa-home me-3"></i>  P4Q3+7WR, AVP Azhagammal Nagar, Thanjavur, Tamil Nadu 613005</p><br>
+            <p class="feml">
+              <i class="fas fa-envelope me-3"></i>
+              designaworksforyou@gmail.com
+            </p><br>
+            <p class="fpno"><i class="fas fa-phone me-3"></i> + 91 9442712901</p>
+            <i class="fa fa-location"></i> <a href="https://g.co/kgs/MgKE1Xq" class="btn btn-link">Click here for location</a>
+            
+          </div>
+          
+        </div>
+       
+      </div>
+    </section>
+    
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="Designa landing page.html">Designa</a>
+    </div><br><br>
+  </div>
+    </footer>
+   
+  </footer>
+  
+  
+  
+          
+    
+</body>
+</html>
